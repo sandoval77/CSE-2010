@@ -11,8 +11,8 @@ class DisplayVec{
       DisplayVec();
       void printVector(const vector<int> v);
       int getVectMemSize(const vector<int> v);
-      printMetaVector(const vector<int> v);
-      const int * getAddress(vector<int> v, int index);
+      void printMetaVector(const vector<int> v); 
+      const int * getAddress(const vector<int> v, int index); 
       private:
 };
 #endif
