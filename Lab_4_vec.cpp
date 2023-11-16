@@ -4,9 +4,9 @@
 * Daisy Sandoval 
 * 11/15/23
 *
-* There are eight different files that I have to link and organize using data structures, arrays,and vectors. In this lab I will really highlight some of the similarities and differences between arrays and vectors. In this lab we really emphasize how both vectors and arrays use location to store elements. 
+* There are many different files that I have to link and organize using data structures, arrays,and vectors. In this lab I will really highlight some of the similarities and differences between arrays and vectors. This lab really emphasizes how both vectors and arrays use location to store elements.
 *
-* My biggest struggle with this lab was mostly syntax, and undertanding why we are using randGenVec. For me to overcome this issue I had to first understand what randGenVec is in this case. RandGen we are using to call the class av and the function is able to populate the values inside the parenthesis. We are specifying the number of elements within our range.
+* My biggest struggle with this lab was mostly syntax, especially dealing with randGenVec. For me to overcome this issue I had to first understand what randGenVec is in this case. RandGen we are using to call the class av and the function is able to populate the values inside the parenthesis. We are specifying the number of elements within our range.
 *
 ***/
 #include <iostream>
