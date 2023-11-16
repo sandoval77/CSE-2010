@@ -17,7 +17,9 @@ using namespace std;
 
 int main()
 {
-    vector<int> test_vec; //initialize vec
+    //vector<int> v; //initialize vec
+    const int CAPACITY = 10;
+    vector<int> v(CAPACITY);
     
     DisplayVec disp = DisplayVec();
     ArrayVec av = ArrayVec(); //initialize ArrayVec and DisplayVec
@@ -26,10 +28,9 @@ int main()
     int num_elem = 10; 
     av.randGenVec(test_vec, num_elem, range);// populate with values
     
-    int test_vec_size = av.getSize(test_vec.data(), test_vec.size()); 
+    int test_vec_size = test_vec.size(); 
     cout << "Vector Element\n";
     disp.printVector(test_vec); 
     cout << "Array Memsize\n";
-    disp.printMetaVector(test_vec, test_vec_size) //is the Test_vec_size correct ?
-    // display contents
+    disp.printMetaVector(test_vec)// display contents
 }
