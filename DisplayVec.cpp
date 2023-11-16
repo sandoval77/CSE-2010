@@ -51,12 +51,12 @@ DisplayVec::DisplayVec(){
 * @param v
 */
       void DisplayVec::printMetaVector(const vector<int> v){
-            int mem_size = getVectMemSize(arr, v.size());
+            int mem_size = getVectMemSize(v);
             int int_size = sizeof(v[0]);
-            printf("Vector has %i number of integers. Each integer is worth %i bytes,totaling up to %i bytes of memory.\n", v.size(), int_size, mem_size);
+            printf("Vector has %ul number of integers. Each integer is worth %i bytes,totaling up to %i bytes of memory.\n", v.size(), int_size, mem_size);
             printf("Element at index %i is located at (%p)\n", 0, getAddress(v, 0));
             printf("Element at index %i is located at (%p)\n", 1, getAddress(v, 1));
-            printf("Element at index %i is located at (%p)\n", size-1 ,getAddress(v,v.size()-1));
+            printf("Element at index %ul is located at (%p)\n", v.size()-1 ,getAddress(v,v.size()-1));
   
       } 
 
