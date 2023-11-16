@@ -53,11 +53,9 @@ void DisplayArr::printMetaArray(int arr[], int size){ // what happens when
 Display:: is removed?
 int mem_size = getArrMemSize(arr, size);
 int int_size = sizeof(arr[0]);
-printf("Array has %i number of integers. Each integer is worth %i bytes,
-totaling up to %i bytes of memory.\n", size, int_size, mem_size);
+printf("Array has %i number of integers. Each integer is worth %i bytes,totaling up to %i bytes of memory.\n", size, int_size, mem_size);
 printf("Element at index %i is located at (%p)\n", 0, getAddress(arr, 0));
 printf("Element at index %i is located at (%p)\n", 1, getAddress(arr, 1));
-printf("Element at index %i is located at (%p)\n", size-1 ,getAddress(arr,
-size-1));
+printf("Element at index %i is located at (%p)\n", size-1 ,getAddress(arr,size-1));
   
 }
